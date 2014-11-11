@@ -402,9 +402,9 @@ class Featured_Content {
 	 */
 	public static function customize_register( $wp_customize ) {
 		$wp_customize->add_section( 'featured_content', array(
-			'title'          => __( 'Featured Content', 'twentyfourteen' ),
-			'description'    => sprintf( __( 'Use a <a href="%1$s">tag</a> to feature your posts. If no posts match the tag, <a href="%2$s">sticky posts</a> will be displayed instead.', 'twentyfourteen' ),
-				esc_url( add_query_arg( 'tag', _x( 'featured', 'featured content default tag slug', 'twentyfourteen' ), admin_url( 'edit.php' ) ) ),
+			'title'          => __( 'Featured Content', 'mymeds' ),
+			'description'    => sprintf( __( 'Use a <a href="%1$s">tag</a> to feature your posts. If no posts match the tag, <a href="%2$s">sticky posts</a> will be displayed instead.', 'mymeds' ),
+				esc_url( add_query_arg( 'tag', _x( 'featured', 'featured content default tag slug', 'mymeds' ), admin_url( 'edit.php' ) ) ),
 				admin_url( 'edit.php?show_sticky=1' )
 			),
 			'priority'       => 130,
@@ -413,7 +413,7 @@ class Featured_Content {
 
 		// Add Featured Content settings.
 		$wp_customize->add_setting( 'featured-content[tag-name]', array(
-			'default'              => _x( 'featured', 'featured content default tag slug', 'twentyfourteen' ),
+			'default'              => _x( 'featured', 'featured content default tag slug', 'mymeds' ),
 			'type'                 => 'option',
 			'sanitize_js_callback' => array( __CLASS__, 'delete_transient' ),
 		) );
@@ -425,12 +425,12 @@ class Featured_Content {
 
 		// Add Featured Content controls.
 		$wp_customize->add_control( 'featured-content[tag-name]', array(
-			'label'    => __( 'Tag Name', 'twentyfourteen' ),
+			'label'    => __( 'Tag Name', 'mymeds' ),
 			'section'  => 'featured_content',
 			'priority' => 20,
 		) );
 		$wp_customize->add_control( 'featured-content[hide-tag]', array(
-			'label'    => __( 'Don&rsquo;t display tag on front end.', 'twentyfourteen' ),
+			'label'    => __( 'Don&rsquo;t display tag on front end.', 'mymeds' ),
 			'section'  => 'featured_content',
 			'type'     => 'checkbox',
 			'priority' => 30,
@@ -473,7 +473,7 @@ class Featured_Content {
 		$defaults = array(
 			'hide-tag' => 1,
 			'tag-id'   => 0,
-			'tag-name' => _x( 'featured', 'featured content default tag slug', 'twentyfourteen' ),
+			'tag-name' => _x( 'featured', 'featured content default tag slug', 'mymeds' ),
 		);
 
 		$options = wp_parse_args( $saved, $defaults );

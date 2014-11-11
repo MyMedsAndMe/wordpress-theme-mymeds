@@ -31,9 +31,9 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 	 * @return Twenty_Fourteen_Ephemera_Widget
 	 */
 	public function __construct() {
-		parent::__construct( 'widget_twentyfourteen_ephemera', __( 'Twenty Fourteen Ephemera', 'twentyfourteen' ), array(
-			'classname'   => 'widget_twentyfourteen_ephemera',
-			'description' => __( 'Use this widget to list your recent Aside, Quote, Video, Audio, Image, Gallery, and Link posts.', 'twentyfourteen' ),
+		parent::__construct( 'widget_mymeds_ephemera', __( 'Twenty Fourteen Ephemera', 'mymeds' ), array(
+			'classname'   => 'widget_mymeds_ephemera',
+			'description' => __( 'Use this widget to list your recent Aside, Quote, Video, Audio, Image, Gallery, and Link posts.', 'mymeds' ),
 		) );
 	}
 
@@ -51,33 +51,33 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 
 		switch ( $format ) {
 			case 'image':
-				$format_string      = __( 'Images', 'twentyfourteen' );
-				$format_string_more = __( 'More images', 'twentyfourteen' );
+				$format_string      = __( 'Images', 'mymeds' );
+				$format_string_more = __( 'More images', 'mymeds' );
 				break;
 			case 'video':
-				$format_string      = __( 'Videos', 'twentyfourteen' );
-				$format_string_more = __( 'More videos', 'twentyfourteen' );
+				$format_string      = __( 'Videos', 'mymeds' );
+				$format_string_more = __( 'More videos', 'mymeds' );
 				break;
 			case 'audio':
-				$format_string      = __( 'Audio', 'twentyfourteen' );
-				$format_string_more = __( 'More audio', 'twentyfourteen' );
+				$format_string      = __( 'Audio', 'mymeds' );
+				$format_string_more = __( 'More audio', 'mymeds' );
 				break;
 			case 'quote':
-				$format_string      = __( 'Quotes', 'twentyfourteen' );
-				$format_string_more = __( 'More quotes', 'twentyfourteen' );
+				$format_string      = __( 'Quotes', 'mymeds' );
+				$format_string_more = __( 'More quotes', 'mymeds' );
 				break;
 			case 'link':
-				$format_string      = __( 'Links', 'twentyfourteen' );
-				$format_string_more = __( 'More links', 'twentyfourteen' );
+				$format_string      = __( 'Links', 'mymeds' );
+				$format_string_more = __( 'More links', 'mymeds' );
 				break;
 			case 'gallery':
-				$format_string      = __( 'Galleries', 'twentyfourteen' );
-				$format_string_more = __( 'More galleries', 'twentyfourteen' );
+				$format_string      = __( 'Galleries', 'mymeds' );
+				$format_string_more = __( 'More galleries', 'mymeds' );
 				break;
 			case 'aside':
 			default:
-				$format_string      = __( 'Asides', 'twentyfourteen' );
-				$format_string_more = __( 'More asides', 'twentyfourteen' );
+				$format_string      = __( 'Asides', 'mymeds' );
+				$format_string_more = __( 'More asides', 'mymeds' );
 				break;
 		}
 
@@ -124,7 +124,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 							if ( has_post_format( 'gallery' ) ) :
 
 								if ( post_password_required() ) :
-									the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyfourteen' ) );
+									the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'mymeds' ) );
 								else :
 									$images = array();
 
@@ -159,7 +159,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 						<?php endif; ?>
 						<p class="wp-caption-text">
 							<?php
-								printf( _n( 'This gallery contains <a href="%1$s" rel="bookmark">%2$s photo</a>.', 'This gallery contains <a href="%1$s" rel="bookmark">%2$s photos</a>.', $total_images, 'twentyfourteen' ),
+								printf( _n( 'This gallery contains <a href="%1$s" rel="bookmark">%2$s photo</a>.', 'This gallery contains <a href="%1$s" rel="bookmark">%2$s photos</a>.', $total_images, 'mymeds' ),
 									esc_url( get_permalink() ),
 									number_format_i18n( $total_images )
 								);
@@ -169,7 +169,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 								endif;
 
 							else :
-								the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyfourteen' ) );
+								the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'mymeds' ) );
 							endif;
 						?>
 					</div><!-- .entry-content -->
@@ -191,7 +191,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 
 								if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 							?>
-							<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyfourteen' ), __( '1 Comment', 'twentyfourteen' ), __( '% Comments', 'twentyfourteen' ) ); ?></span>
+							<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'mymeds' ), __( '1 Comment', 'mymeds' ), __( '% Comments', 'mymeds' ) ); ?></span>
 							<?php endif; ?>
 						</div><!-- .entry-meta -->
 					</header><!-- .entry-header -->
@@ -203,7 +203,7 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 			<a class="post-format-archive-link" href="<?php echo esc_url( get_post_format_link( $format ) ); ?>">
 				<?php
 					/* translators: used with More archives link */
-					printf( __( '%s <span class="meta-nav">&rarr;</span>', 'twentyfourteen' ), $format_string_more );
+					printf( __( '%s <span class="meta-nav">&rarr;</span>', 'mymeds' ), $format_string_more );
 				?>
 			</a>
 			<?php
@@ -252,13 +252,13 @@ class Twenty_Fourteen_Ephemera_Widget extends WP_Widget {
 		$number = empty( $instance['number'] ) ? 2 : absint( $instance['number'] );
 		$format = isset( $instance['format'] ) && in_array( $instance['format'], $this->formats ) ? $instance['format'] : 'aside';
 		?>
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'twentyfourteen' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:', 'mymeds' ); ?></label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" class="widefat" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>"></p>
 
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _e( 'Number of posts to show:', 'twentyfourteen' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>"><?php _e( 'Number of posts to show:', 'mymeds' ); ?></label>
 			<input id="<?php echo esc_attr( $this->get_field_id( 'number' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ); ?>" type="text" value="<?php echo esc_attr( $number ); ?>" size="3"></p>
 
-			<p><label for="<?php echo esc_attr( $this->get_field_id( 'format' ) ); ?>"><?php _e( 'Post format to show:', 'twentyfourteen' ); ?></label>
+			<p><label for="<?php echo esc_attr( $this->get_field_id( 'format' ) ); ?>"><?php _e( 'Post format to show:', 'mymeds' ); ?></label>
 			<select id="<?php echo esc_attr( $this->get_field_id( 'format' ) ); ?>" class="widefat" name="<?php echo esc_attr( $this->get_field_name( 'format' ) ); ?>">
 				<?php foreach ( $this->formats as $slug ) : ?>
 				<option value="<?php echo esc_attr( $slug ); ?>"<?php selected( $format, $slug ); ?>><?php echo get_post_format_string( $slug ); ?></option>
