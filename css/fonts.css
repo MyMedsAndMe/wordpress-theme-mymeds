@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url("../fonts/museosansrounded-300-mmm.eot");
+  src: url("../fonts/museosansrounded-300-mmm.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/museosansrounded-300-mmm.woff") format('woff'),
+       url("../fonts/museosansrounded-300-mmm.ttf") format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url("../fonts/museosansrounded-500-mmm.eot");
+  src: url("../fonts/museosansrounded-500-mmm.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/museosansrounded-500-mmm.woff") format('woff'),
+       url("../fonts/museosansrounded-500-mmm.ttf") format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url("../fonts/museosansrounded-700-mmm.eot");
+  src: url("../fonts/museosansrounded-700-mmm.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/museosansrounded-700-mmm.woff") format('woff'),
+       url("../fonts/museosansrounded-700-mmm.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
