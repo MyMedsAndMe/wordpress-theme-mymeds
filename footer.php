@@ -18,7 +18,28 @@
 
 			<div class="site-info">
 				<?php do_action( 'mymeds_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'mymeds' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'mymeds' ), 'WordPress' ); ?></a>
+        
+        <div class="row" data-cols="3">
+          <div class="column" data-col="1">
+            <h2>Contact us</h2>
+            <address>
+              <strong>MyMeds&amp;Me</strong><br/>
+              5A Noel St<br/>
+              London<br/>
+              W1F 8GE<br/>
+              <abbr title="Phone">+44 (0)20 7870 9111</abbr><br/>
+              <a href="mailto:info@mymedsandme.com">info@mymedsandme.com</a>
+            </address>
+          </div>
+          
+          <div class="column" data-col="1">
+            <?php wp_nav_menu( array( 'theme_location' => 'footer1', 'menu_class' => 'footer-menu' ) ); ?>
+          </div>
+          
+          <div class="column" data-col="1">
+            <?php wp_nav_menu( array( 'theme_location' => 'footer2', 'menu_class' => 'footer-menu'  ) ); ?>
+          </div>
+        </div>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->

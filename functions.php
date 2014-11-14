@@ -82,6 +82,8 @@ function mymeds_setup() {
 	register_nav_menus( array(
 		'primary'   => __( 'Top primary menu', 'mymeds' ),
 		'secondary' => __( 'Secondary menu in left sidebar', 'mymeds' ),
+    'footer1'   => __( 'Nav in 1st footer placement', 'mymeds' ),
+    'footer2'   => __( 'Nav in 2nd footer placement', 'mymeds' )
 	) );
 
 	/*
