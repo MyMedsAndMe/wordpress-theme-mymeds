@@ -3,8 +3,8 @@
  * The template for displaying featured content
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage MyMeds
+ * @since MyMeds 1.0
  */
 ?>
 
@@ -12,9 +12,9 @@
 	<div class="featured-content-inner">
 	<?php
 		/**
-		 * Fires before the Twenty Fourteen featured content.
+		 * Fires before the MyMeds featured content.
 		 *
-		 * @since Twenty Fourteen 1.0
+		 * @since MyMeds 1.0
 		 */
 		do_action( 'mymeds_featured_posts_before' );
 
@@ -27,9 +27,9 @@
 		endforeach;
 
 		/**
-		 * Fires after the Twenty Fourteen featured content.
+		 * Fires after the MyMeds featured content.
 		 *
-		 * @since Twenty Fourteen 1.0
+		 * @since MyMeds 1.0
 		 */
 		do_action( 'mymeds_featured_posts_after' );
 

@@ -1,16 +1,16 @@
 <?php
 /**
- * Implement Custom Header functionality for Twenty Fourteen
+ * Implement Custom Header functionality for MyMeds
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage MyMeds
+ * @since MyMeds 1.0
  */
 
 /**
  * Set up the WordPress core custom header settings.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  *
  * @uses mymeds_header_style()
  * @uses mymeds_admin_header_style()
@@ -18,9 +18,9 @@
  */
 function mymeds_custom_header_setup() {
 	/**
-	 * Filter Twenty Fourteen custom-header support arguments.
+	 * Filter MyMeds custom-header support arguments.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since MyMeds 1.0
 	 *
 	 * @param array $args {
 	 *     An array of custom-header support arguments.
@@ -94,7 +94,7 @@ if ( ! function_exists( 'mymeds_admin_header_style' ) ) :
  *
  * @see mymeds_custom_header_setup()
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 function mymeds_admin_header_style() {
 ?>
@@ -132,7 +132,7 @@ if ( ! function_exists( 'mymeds_admin_header_image' ) ) :
  *
  * @see mymeds_custom_header_setup()
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 function mymeds_admin_header_image() {
 ?>

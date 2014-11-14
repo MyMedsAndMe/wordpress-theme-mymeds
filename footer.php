@@ -5,8 +5,8 @@
  * Contains footer content and the closing of the #main and #page div elements.
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage MyMeds
+ * @since MyMeds 1.0
  */
 ?>
 

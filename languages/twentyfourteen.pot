@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Twenty Fourteen 1.2\n"
+"Project-Id-Version: MyMeds 1.2\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/mymeds\n"
 "POT-Creation-Date: 2014-09-03 00:45:47+00:00\n"
 "MIME-Version: 1.0\n"
@@ -141,7 +141,7 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#. #-#-#-#-#  mymeds.pot (Twenty Fourteen 1.2)  #-#-#-#-#
+#. #-#-#-#-#  mymeds.pot (MyMeds 1.2)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:21
 msgid "http://wordpress.org/"
@@ -228,7 +228,7 @@ msgstr ""
 
 #: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
 msgid ""
-"Twenty Fourteen requires at least WordPress version 3.6. You are running "
+"MyMeds requires at least WordPress version 3.6. You are running "
 "version %s. Please upgrade and try again."
 msgstr ""
 
@@ -272,10 +272,10 @@ msgstr ""
 msgid "Slider"
 msgstr ""
 
-#. #-#-#-#-#  mymeds.pot (Twenty Fourteen 1.2)  #-#-#-#-#
+#. #-#-#-#-#  mymeds.pot (MyMeds 1.2)  #-#-#-#-#
 #. Theme Name of the plugin/theme
 #: inc/customizer.php:99
-msgid "Twenty Fourteen"
+msgid "MyMeds"
 msgstr ""
 
 #: inc/customizer.php:102
@@ -299,7 +299,7 @@ msgstr ""
 #: inc/customizer.php:104
 msgid ""
 "For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s"
-"\">Twenty Fourteen documentation</a>."
+"\">MyMeds documentation</a>."
 msgstr ""
 
 #: inc/featured-content.php:428
@@ -343,7 +343,7 @@ msgid "Sticky"
 msgstr ""
 
 #: inc/widgets.php:34
-msgid "Twenty Fourteen Ephemera"
+msgid "MyMeds Ephemera"
 msgstr ""
 
 #: inc/widgets.php:36

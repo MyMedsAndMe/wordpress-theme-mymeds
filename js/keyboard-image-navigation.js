@@ -1,5 +1,5 @@
 /**
- * Twenty Fourteen keyboard support for image navigation.
+ * MyMeds keyboard support for image navigation.
  */
 ( function( $ ) {
 	$( document ).on( 'keydown.mymeds', function( e ) {

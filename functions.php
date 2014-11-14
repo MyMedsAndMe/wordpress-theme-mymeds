@@ -1,6 +1,6 @@
 <?php
 /**
- * Twenty Fourteen functions and definitions
+ * MyMeds functions and definitions
  *
  * Set up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
@@ -21,8 +21,8 @@
  * @link http://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage MyMeds
+ * @since MyMeds 1.0
  */
 
 /**
@@ -30,14 +30,14 @@
  *
  * @see mymeds_content_width()
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 474;
 }
 
 /**
- * Twenty Fourteen only works in WordPress 3.6 or later.
+ * MyMeds only works in WordPress 3.6 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
@@ -45,7 +45,7 @@ if ( version_compare( $GLOBALS['wp_version'], '3.6', '<' ) ) {
 
 if ( ! function_exists( 'mymeds_setup' ) ) :
 /**
- * Twenty Fourteen setup.
+ * MyMeds setup.
  *
  * Set up theme defaults and registers support for various WordPress features.
  *
@@ -53,15 +53,15 @@ if ( ! function_exists( 'mymeds_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support post thumbnails.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 function mymeds_setup() {
 
 	/*
-	 * Make Twenty Fourteen available for translation.
+	 * Make MyMeds available for translation.
 	 *
 	 * Translations can be added to the /languages/ directory.
-	 * If you're building a theme based on Twenty Fourteen, use a find and
+	 * If you're building a theme based on MyMeds, use a find and
 	 * replace to change 'mymeds' to the name of your theme in all
 	 * template files.
 	 */
@@ -122,7 +122,7 @@ add_action( 'after_setup_theme', 'mymeds_setup' );
 /**
  * Adjust content_width value for image attachment template.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 function mymeds_content_width() {
 	if ( is_attachment() && wp_attachment_is_image() ) {
@@ -134,15 +134,15 @@ add_action( 'template_redirect', 'mymeds_content_width' );
 /**
  * Getter function for Featured Content Plugin.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  *
  * @return array An array of WP_Post objects.
  */
 function mymeds_get_featured_posts() {
 	/**
-	 * Filter the featured posts to return in Twenty Fourteen.
+	 * Filter the featured posts to return in MyMeds.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since MyMeds 1.0
 	 *
 	 * @param array|bool $posts Array of featured posts, otherwise false.
 	 */
@@ -152,7 +152,7 @@ function mymeds_get_featured_posts() {
 /**
  * A helper conditional function that returns a boolean value.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  *
  * @return bool Whether there are featured posts.
  */
@@ -161,13 +161,13 @@ function mymeds_has_featured_posts() {
 }
 
 /**
- * Register three Twenty Fourteen widget areas.
+ * Register three MyMeds widget areas.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 function mymeds_widgets_init() {
 	require get_template_directory() . '/inc/widgets.php';
-	register_widget( 'Twenty_Fourteen_Ephemera_Widget' );
+	register_widget( 'MyMeds_Ephemera_Widget' );
 
 	register_sidebar( array(
 		'name'          => __( 'Primary Sidebar', 'mymeds' ),
@@ -200,9 +200,9 @@ function mymeds_widgets_init() {
 add_action( 'widgets_init', 'mymeds_widgets_init' );
 
 /**
- * Register Lato Google font for Twenty Fourteen.
+ * Register Lato Google font for MyMeds.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  *
  * @return string
  */
@@ -213,7 +213,7 @@ function mymeds_font_url() {
 /**
  * Enqueue scripts and styles for the front end.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 function mymeds_scripts() {
 	// Add Lato font, used in the main stylesheet.
@@ -256,7 +256,7 @@ add_action( 'wp_enqueue_scripts', 'mymeds_scripts' );
 /**
  * Enqueue Google fonts style to admin screen for custom header display.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 function mymeds_admin_fonts() {
 	wp_enqueue_style( 'mymeds-lato', mymeds_font_url(), array(), null );
@@ -267,14 +267,14 @@ if ( ! function_exists( 'mymeds_the_attached_image' ) ) :
 /**
  * Print the attached image with a link to the next attached image.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 function mymeds_the_attached_image() {
 	$post                = get_post();
 	/**
-	 * Filter the default Twenty Fourteen attachment size.
+	 * Filter the default MyMeds attachment size.
 	 *
-	 * @since Twenty Fourteen 1.0
+	 * @since MyMeds 1.0
 	 *
 	 * @param array $dimensions {
 	 *     An array of height and width dimensions.
@@ -334,7 +334,7 @@ if ( ! function_exists( 'mymeds_list_authors' ) ) :
 /**
  * Print a list of all site contributors who published at least one post.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  */
 function mymeds_list_authors() {
 	$contributor_ids = get_users( array(
@@ -385,7 +385,7 @@ endif;
  * 6. Single views.
  * 7. Featured content layout.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  *
  * @param array $classes A list of existing body class values.
  * @return array The filtered body class list.
@@ -436,7 +436,7 @@ add_filter( 'body_class', 'mymeds_body_classes' );
  * Adds a post class to denote:
  * Non-password protected page with a post thumbnail.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  *
  * @param array $classes A list of existing post class values.
  * @return array The filtered post class list.
@@ -454,7 +454,7 @@ add_filter( 'post_class', 'mymeds_post_classes' );
  * Create a nicely formatted and more specific title element text for output
  * in head of document, based on current view.
  *
- * @since Twenty Fourteen 1.0
+ * @since MyMeds 1.0
  *
  * @global int $paged WordPress archive pagination page count.
  * @global int $page  WordPress paginated post page count.

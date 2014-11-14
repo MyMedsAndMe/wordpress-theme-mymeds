@@ -7,8 +7,8 @@
  * other 'pages' on your WordPress site will use a different template.
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage MyMeds
+ * @since MyMeds 1.0
  */
 
 get_header(); ?>

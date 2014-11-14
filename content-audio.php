@@ -3,8 +3,8 @@
  * The template for displaying posts in the Audio post format
  *
  * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * @subpackage MyMeds
+ * @since MyMeds 1.0
  */
 ?>
 
