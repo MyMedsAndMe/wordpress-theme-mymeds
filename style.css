@@ -1054,8 +1054,8 @@ span + .edit-link:before,
 }
 
 .hentry {
-  margin: 0 auto 48px;
-  max-width: 672px;
+  margin: 0 0 0 24%;
+  max-width: 767px;
 }
 
 .site-content .entry-header,
@@ -1792,6 +1792,9 @@ img.porthole {
   margin: 24px 0;
   max-width: 1008px;
 }
+.full-width .archive-header {
+  margin-left: 0;
+}
 
 .archive-title,
 .page-title {
@@ -1906,6 +1909,7 @@ img.porthole {
 
 .full-width .hentry {
   max-width: 100%;
+  margin-left: 0;
 }
 
 
@@ -2352,15 +2356,14 @@ img.porthole {
 .widget-area .widget input,
 .widget-area .widget textarea {
   background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  border-color: #ccc;
   font-size: 16px;
   padding: 1px 2px 2px 4px;
 }
 
 .widget-area .widget input:focus,
 .widget-area .widget textarea:focus {
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: #aaa;
 }
 
 .widget button,
@@ -2428,7 +2431,7 @@ img.porthole {
 }
 
 .widget_calendar tbody a {
-  background-color: #24890d;
+  background-color: #01a4a4;
   color: #fff;
   display: block;
 }
@@ -3110,6 +3113,7 @@ img.porthole {
 .site-main {
   max-width: 1260px;
   margin: 0 auto;
+  position: relative;
 }
 
 .site-main .widecolumn {
@@ -3429,7 +3433,6 @@ img.porthole {
   .content-sidebar {
     border: 0;
     float: right;
-    margin-left: -33.33333333%;
     padding: 48px 30px 24px;
     position: relative;
     width: 33.33333333%;
@@ -3762,7 +3765,7 @@ img.porthole {
   }
 
   .site-content {
-    margin-right: 29.04761904%;
+    margin-right: 20%;
   }
 
   .site-content .entry-header {
@@ -3774,8 +3777,10 @@ img.porthole {
   }
 
   .content-sidebar {
-    margin-left: -29.04761904%;
-    width: 29.04761904%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 20%;
   }
 
   .site:before {
@@ -4190,7 +4195,10 @@ img.porthole {
   .site-content .entry-content,
   .site-content .entry-summary,
   .site-content footer.entry-meta {
-    margin-right: 54px;
+    /* margin-right: 54px;*/
+  }
+  .archive-header {
+    margin-left: 24%;
   }
 
   .full-width .archive-header,
