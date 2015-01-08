@@ -36,7 +36,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *   6.12 - Full-width
  *   6.13 - Singular
  *   6.14 - Comments
- *   6.15 - Images
  * 7.0 - Sidebar
  *   7.1 - Widgets
  *   7.2 - Content Sidebar Widgets
@@ -1113,7 +1112,8 @@ a.post-thumbnail:hover {
   z-index: 1;
 }
 
-.entry-title {
+.entry-title,
+.archive-title {
   color: #0456a5;
   font-size: 51px;
   font-weight: bold;
@@ -1122,12 +1122,23 @@ a.post-thumbnail:hover {
   margin: 0 0 12px 0;
 }
 
-.entry-title a {
+.entry-title a,
+.archive-title a {
   color: #0456a5;
 }
 
-.entry-title a:hover {
+.entry-title a:hover,
+.archive-title a:hover {
   color: #022f5a;
+}
+
+.category-listing .entry-title {
+  color: #01a4a4;
+  font-size: 31px;
+}
+
+.category-listing .entry-title a {
+  color: #01a4a4;
 }
 
 .site-content .entry-header {
@@ -1797,7 +1808,6 @@ img.porthole {
   margin-left: 0;
 }
 
-.archive-title,
 .page-title {
   font-size: 16px;
   font-weight: 900;
@@ -1933,6 +1943,24 @@ img.porthole {
   margin: 48px 0;
   max-width: 1008px;
   padding: 0 10px;
+}
+
+/**
+ * 6.15 Images
+ * -----------------------------------------------------------------------------
+ */
+
+.img-porthole {
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1em;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 .comment-reply-title,
@@ -2166,25 +2194,6 @@ img.porthole {
 #comment-nav-above {
   margin-top: 36px;
   margin-bottom: 0;
-}
-
-/**
- * 6.15 Images
- * -----------------------------------------------------------------------------
- */
-
-.img-porthole {
-  padding: 4px;
-  line-height: 1.428571429;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 1em;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
 }
 
 
