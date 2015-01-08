@@ -36,6 +36,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  *   6.12 - Full-width
  *   6.13 - Singular
  *   6.14 - Comments
+ *   6.15 - Images
  * 7.0 - Sidebar
  *   7.1 - Widgets
  *   7.2 - Content Sidebar Widgets
@@ -2165,6 +2166,25 @@ img.porthole {
 #comment-nav-above {
   margin-top: 36px;
   margin-bottom: 0;
+}
+
+/**
+ * 6.15 Images
+ * -----------------------------------------------------------------------------
+ */
+
+.img-porthole {
+  padding: 4px;
+  line-height: 1.428571429;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 1em;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 
