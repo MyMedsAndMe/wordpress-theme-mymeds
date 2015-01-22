@@ -4186,22 +4186,6 @@ img.porthole {
   }
 }
 
-@media screen and (min-width: 1110px) {
-  .archive-header,
-  .comments-area,
-  .image-navigation,
-  .page-header,
-  .page-content,
-  .post-navigation,
-  .site-content .entry-header,
-  .site-content .entry-content,
-  .site-content .entry-summary,
-  .site-content footer.entry-meta {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-}
-
 @media screen and (min-width: 1218px) {
   .archive-header,
   .comments-area,
