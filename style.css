@@ -472,13 +472,13 @@ hr {
  * to achieve a better experience. See http://core.trac.wordpress.org/ticket/25898.
  */
 ::selection {
-  background: #24890d;
+  background: #01a4a4;
   color: #fff;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #24890d;
+  background: #01a4a4;
   color: #fff;
   text-shadow: none;
 }
@@ -1170,7 +1170,7 @@ a.post-thumbnail:hover {
 }
 
 .entry-meta a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .sticky .entry-date {
@@ -1187,7 +1187,7 @@ a.post-thumbnail:hover {
 }
 
 .cat-links a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .byline {
@@ -1226,7 +1226,7 @@ a.post-thumbnail:hover {
 }
 
 .entry-meta .tag-links a:hover {
-  background-color: #41a62a;
+  background-color: #017b7b;
   color: #fff;
 }
 
@@ -1243,7 +1243,7 @@ a.post-thumbnail:hover {
 }
 
 .entry-meta .tag-links a:hover:before {
-  border-right-color: #41a62a;
+  border-right-color: #017b7b;
 }
 
 .entry-meta .tag-links a:after {
@@ -1357,7 +1357,7 @@ a.post-thumbnail:hover {
 }
 
 .entry-content .edit-link a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 /* Mediaelements */
@@ -1377,7 +1377,7 @@ a.post-thumbnail:hover {
 }
 
 .hentry .mejs-controls .mejs-time-rail .mejs-time-current {
-  background: #24890d;
+  background: #01a4a4;
 }
 
 .hentry .mejs-controls .mejs-time-rail .mejs-time-total,
@@ -1464,12 +1464,12 @@ a.post-thumbnail:hover {
 }
 
 .hentry .mejs-overlay:hover .mejs-overlay-button {
-  background-color: #24890d;
+  background-color: #01a4a4;
   color: #fff;
 }
 
 .hentry .mejs-controls .mejs-button button:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .content-sidebar .wp-playlist-item .wp-playlist-caption {
@@ -1506,8 +1506,8 @@ a.post-thumbnail:hover {
 }
 
 .page-links a:hover {
-  background: #41a62a;
-  border: 1px solid #41a62a;
+  background: #017b7b;
+  border: 1px solid #017b7b;
   color: #fff;
 }
 
@@ -1717,7 +1717,7 @@ a.post-thumbnail:hover {
 
 .post-navigation a:hover,
 .image-navigation a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 /* Paging Navigation */
@@ -1747,11 +1747,11 @@ a.post-thumbnail:hover {
 }
 
 .paging-navigation .page-numbers.current {
-  border-top: 5px solid #24890d;
+  border-top: 5px solid #01a4a4;
 }
 
 .paging-navigation a:hover {
-  border-top: 5px solid #41a62a;
+  border-top: 5px solid #017b7b;
   color: #2b2b2b;
 }
 
@@ -2009,7 +2009,7 @@ img.porthole {
 .comment-list .pingback a:hover,
 .comment-list .trackback a:hover,
 .comment-metadata a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .comment-list article,
@@ -2167,7 +2167,7 @@ img.porthole {
 }
 
 .comment-reply-title small a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .comment-reply-title small a:before {
@@ -2259,7 +2259,8 @@ img.porthole {
   -ms-hyphens:     auto;
   hyphens:         auto;
   line-height: 1.2857142857;
-  margin-bottom: 48px;
+  margin-bottom: 18px;
+  margin-top: 18px;
   width: 100%;
   word-wrap: break-word;
 }
@@ -2400,7 +2401,7 @@ img.porthole {
 .widget input[type="button"],
 .widget input[type="reset"],
 .widget input[type="submit"] {
-  background-color: #24890d;
+  background-color: #01a4a4;
   border: 0;
   font-size: 12px;
   padding: 5px 15px 4px;
@@ -2412,7 +2413,7 @@ img.porthole {
 .widget input[type="reset"]:focus,
 .widget input[type="submit"]:hover,
 .widget input[type="submit"]:focus {
-  background-color: #41a62a;
+  background-color: #017b7b;
 }
 
 .widget input[type="button"]:active,
@@ -2466,7 +2467,7 @@ img.porthole {
 }
 
 .widget_calendar tbody a:hover {
-  background-color: #41a62a;
+  background-color: #017b7b;
 }
 
 .widget_calendar tbody a:hover {
@@ -2518,7 +2519,7 @@ img.porthole {
 }
 
 .widget_mymeds_ephemera .entry-meta a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .widget_mymeds_ephemera .entry-content ul,
@@ -2587,6 +2588,26 @@ img.porthole {
   padding-bottom: 0;
 }
 
+.primary-sidebar .widget_nav_menu li > a {
+  background-color: #01a4a4;
+  border: 1px solid #018b8b;
+  border-radius: 1em;
+  color: #fff;
+  display: block;
+  padding: 6px 12px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.primary-sidebar .widget_nav_menu li > a:hover {
+  background-color: #017b7b;
+  color: #fff;
+}
+
+.primary-sidebar .widget_nav_menu li > a:active {
+  background-color: #017b7b;
+}
+
 /* Recent Posts Widget */
 
 .widget_recent_entries .post-date {
@@ -2628,11 +2649,11 @@ img.porthole {
  */
 
 .content-sidebar .widget a {
-  color: #24890d;
+  color: #01a4a4;
 }
 
 .content-sidebar .widget a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .content-sidebar .widget pre {
@@ -2694,7 +2715,7 @@ img.porthole {
 .content-sidebar .widget input[type="button"],
 .content-sidebar .widget input[type="reset"],
 .content-sidebar .widget input[type="submit"] {
-  background-color: #24890d;
+  background-color: #01a4a4;
   border: 0;
   color: #fff;
 }
@@ -2705,7 +2726,7 @@ img.porthole {
 .content-sidebar .widget input[type="reset"]:focus,
 .content-sidebar .widget input[type="submit"]:hover,
 .content-sidebar .widget input[type="submit"]:focus {
-  background-color: #41a62a;
+  background-color: #017b7b;
 }
 
 .content-sidebar .widget input[type="button"]:active,
@@ -2733,7 +2754,7 @@ img.porthole {
 }
 
 .content-sidebar .widget .widget-title a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 /* List Style Widgets*/
@@ -2826,7 +2847,7 @@ img.porthole {
 }
 
 .content-sidebar .widget_mymeds_ephemera .entry-meta a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .content-sidebar.widget_mymeds_ephemera blockquote cite {
@@ -2910,7 +2931,7 @@ img.porthole {
 }
 
 .site-info a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .site-info h2 {
@@ -2996,7 +3017,7 @@ img.porthole {
 }
 
 .featured-content a:hover {
-  color: #41a62a;
+  color: #017b7b;
 }
 
 .featured-content .entry-meta {
@@ -3074,12 +3095,12 @@ img.porthole {
 }
 
 .slider-control-paging a:hover:before {
-  background-color: #41a62a;
+  background-color: #017b7b;
 }
 
 .slider-control-paging .slider-active:before,
 .slider-control-paging .slider-active:hover:before {
-  background-color: #24890d;
+  background-color: #01a4a4;
 }
 
 .slider-direction-nav {
@@ -3115,7 +3136,7 @@ img.porthole {
 }
 
 .slider-direction-nav a:hover {
-  background-color: #24890d;
+  background-color: #01a4a4;
 }
 
 .slider-direction-nav a:before {
@@ -3719,6 +3740,7 @@ img.porthole {
     width:         calc(50% + 130px);
   }
 
+  /*
   .full-width .site-content blockquote.alignleft,
   .full-width .site-content img.size-full.alignleft,
   .full-width .site-content img.size-large.alignleft,
@@ -3726,11 +3748,13 @@ img.porthole {
   .full-width .site-content .wp-caption.alignleft {
     margin-left: -168px;
   }
+  */
 
   .full-width .site-content .alignleft {
     clear: left;
   }
 
+  /*
   .full-width .site-content blockquote.alignright,
   .full-width .site-content img.size-full.alignright,
   .full-width .site-content img.size-large.alignright,
@@ -3738,6 +3762,7 @@ img.porthole {
   .full-width .site-content .wp-caption.alignright {
     margin-right: -168px;
   }
+  */
 
   .full-width .site-content .alignright {
     clear: right;
@@ -3863,7 +3888,7 @@ img.porthole {
   }
 
   .secondary-navigation ul ul {
-    background-color: #24890d;
+    background-color: #01a4a4;
     position: absolute;
     top: 0;
     left: -999em;
@@ -3877,13 +3902,13 @@ img.porthole {
 
   .secondary-navigation li:hover > a,
   .secondary-navigation li.focus > a {
-    background-color: #24890d;
+    background-color: #01a4a4;
     color: #fff;
   }
 
   .secondary-navigation ul ul a:hover,
   .secondary-navigation ul ul li.focus > a {
-    background-color: #41a62a;
+    background-color: #017b7b;
   }
 
   .secondary-navigation ul li:hover > ul,

@@ -14,8 +14,6 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 
-			<?php get_sidebar( 'footer' ); ?>
-
 			<div class="site-info">
 				<?php do_action( 'mymeds_credits' ); ?>
         
@@ -40,6 +38,12 @@
             <?php wp_nav_menu( array( 'theme_location' => 'footer2', 'menu_class' => 'footer-menu'  ) ); ?>
           </div>
         </div>
+
+        <p>
+          &copy;2015 MyMeds&amp;Me Ltd. All Rights Reserved. Privacy Policy<br/>
+          Registered office: 2 Crossways Business Centre, Bicester Road, Aylesbury, HP18 0RA
+        </p>
+	<?php get_sidebar( 'footer' ); ?>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
