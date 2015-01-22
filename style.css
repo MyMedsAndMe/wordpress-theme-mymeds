@@ -953,6 +953,10 @@ span + .edit-link:before,
   margin: 19px 0 0;
 }
 
+.site-navigation.toggled-on ul ul {
+  margin-top: 0;
+}
+
 .site-navigation ul ul {
   margin-left: 20px;
 }
@@ -962,6 +966,12 @@ span + .edit-link:before,
   color: #0456a5;
   display: block;
   text-transform: uppercase;
+}
+
+.site-navigation.toggled-on a {
+  border-radius: 0;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
 }
 
 .site-navigation .current_page_item > a,
@@ -1143,7 +1153,7 @@ a.post-thumbnail:hover {
 
 .site-content .entry-header {
   background-color: #fff;
-  padding: 0 10px 12px;
+  padding: 0 0 12px;
 }
 
 .site-content .has-post-thumbnail .entry-header {
@@ -1277,7 +1287,7 @@ a.post-thumbnail:hover {
 .site-content .entry-summary,
 .page-content {
   background-color: #fff;
-  padding: 12px 10px 0;
+  padding: 12px 0 0;
 }
 
 .page .entry-content {
@@ -3414,11 +3424,6 @@ img.porthole {
 }
 
 @media screen and (min-width: 594px) {
-  .site-content .entry-header {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
   .site-content .has-post-thumbnail .entry-header {
     margin-top: -48px;
   }
@@ -3448,19 +3453,6 @@ img.porthole {
 
   .site-content .has-post-thumbnail .entry-header {
     margin-top: 0;
-  }
-
-  .archive-header,
-  .comments-area,
-  .image-navigation,
-  .page-header,
-  .page-content,
-  .post-navigation,
-  .site-content .entry-content,
-  .site-content .entry-summary,
-  .site-content footer.entry-meta {
-    padding-right: 30px;
-    padding-left: 30px;
   }
 
   .singular .site-content .hentry.has-post-thumbnail {
@@ -4131,34 +4123,6 @@ img.porthole {
 @media screen and (min-width: 1040px) {
   .site-content .has-post-thumbnail .entry-header {
     margin-top: -48px;
-  }
-
-  .archive-header,
-  .comments-area,
-  .image-navigation,
-  .page-header,
-  .page-content,
-  .post-navigation,
-  .site-content .entry-header,
-  .site-content .entry-content,
-  .site-content .entry-summary,
-  .site-content footer.entry-meta {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-
-  .full-width .archive-header,
-  .full-width .comments-area,
-  .full-width .image-navigation,
-  .full-width .page-header,
-  .full-width .page-content,
-  .full-width .post-navigation,
-  .full-width .site-content .entry-header,
-  .full-width .site-content .entry-content,
-  .full-width .site-content .entry-summary,
-  .full-width .site-content footer.entry-meta {
-    padding-right: 30px;
-    padding-left: 30px;
   }
 }
 
