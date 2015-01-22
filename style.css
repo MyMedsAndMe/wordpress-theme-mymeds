@@ -1273,16 +1273,6 @@ a.post-thumbnail:hover {
  * -----------------------------------------------------------------------------
  */
 
-.entry-content,
-.entry-summary,
-.page-content {
-  -webkit-hyphens: auto;
-  -moz-hyphens:    auto;
-  -ms-hyphens:     auto;
-  hyphens:         auto;
-  word-wrap: break-word;
-}
-
 .site-content .entry-content,
 .site-content .entry-summary,
 .page-content {
