@@ -323,14 +323,19 @@ a.post-thumbnail:hover {
   padding-left: 0;
 }
 
+.ie8 .main-content,
 .ie8 .content-area {
-	float: left;
-  padding-left: 0;
 	width: 1000px;
 }
 
+.ie8 .page-template-full-width .main-content,
 .ie8 .page-template-full-width .content-area {
   width: 100%;
+}
+
+.ie8 .content-area {
+  float: left;
+  padding-left: 0;
 }
 
 .ie8 .site-content {
