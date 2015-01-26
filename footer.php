@@ -40,7 +40,7 @@
         </div>
 
         <p>
-          &copy;2015 MyMeds&amp;Me Ltd. All Rights Reserved. Privacy Policy<br/>
+          &copy;2015 MyMeds&amp;Me Ltd. All Rights Reserved. <a href="http://wordpress.mymedsandme.com/privacy-policy/">Privacy Policy</a><br/>
           Registered office: 2 Crossways Business Centre, Bicester Road, Aylesbury, HP18 0RA
         </p>
 	<?php get_sidebar( 'footer' ); ?>
