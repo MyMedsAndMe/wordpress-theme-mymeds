@@ -320,17 +320,23 @@ a.post-thumbnail:hover {
 
 .ie8 .main-content {
 	float: left;
+  padding-left: 0;
 }
 
 .ie8 .content-area {
 	float: left;
-	padding-top: 72px;
-	width: 100%;
+  padding-left: 0;
+	width: 1000px;
+}
+
+.ie8 .page-template-full-width .content-area {
+  width: 100%;
 }
 
 .ie8 .site-content {
-	margin-right: 29.04761904%;
-	margin-left: 17.61904761%;
+	margin-right: 30px;
+	margin-left: 30px;
+  padding-left: 0;
 }
 
 .ie8 .search-box-wrapper,
@@ -396,7 +402,6 @@ a.post-thumbnail:hover {
 }
 
 .ie8 .primary-navigation ul ul {
-	background-color: #24890d;
 	float: left;
 	margin: 0;
 	position: absolute;
@@ -425,13 +430,7 @@ a.post-thumbnail:hover {
 
 .ie8 .primary-navigation li:hover > a,
 .ie8 .primary-navigation li.focus > a {
-	background-color: #24890d;
 	color: #fff;
-}
-
-.ie8 .primary-navigation ul ul a:hover,
-.ie8 .primary-navigation ul ul li.focus > a {
-	background-color: #41a62a;
 }
 
 .ie8 .primary-navigation ul li:hover > ul,
@@ -541,7 +540,7 @@ a.post-thumbnail:hover {
 }
 
 .ie8 .site:before {
-	background-color: #000;
+	background-color: #FFFFFF;
 	content: "";
 	display: block;
 	height: 100%;
@@ -557,8 +556,8 @@ a.post-thumbnail:hover {
 	border: 0;
 	clear: none;
 	color: #b3b3b3;
-	float: left;
-	margin: 0 0 0 -100%;
+	float: right;
+	margin: 0;
 	min-height: 100vh;
 	padding: 0 30px;
 	width: 12.85714285%;
